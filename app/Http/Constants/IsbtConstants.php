@@ -1,0 +1,83 @@
+<?php
+
+namespace App\Http\Constants;
+
+class IsbtConstants
+{
+    const ABO_AND_RHD_BLOOD_GROUP_O_RHD_NEGATIVE = 95;
+    const ABO_AND_RHD_BLOOD_GROUP_O_RHD_POSITIVE = 51;
+    const ABO_AND_RHD_BLOOD_GROUP_A_RHD_NEGATIVE = 06;
+    const ABO_AND_RHD_BLOOD_GROUP_A_RHD_POSITIVE = 62;
+    const ABO_AND_RHD_BLOOD_GROUP_B_RHD_NEGATIVE = 17;
+    const ABO_AND_RHD_BLOOD_GROUP_B_RHD_POSITIVE = 73;
+    const ABO_AND_RHD_BLOOD_GROUP_AB_RHD_NEGATIVE = 28;
+    const ABO_AND_RHD_BLOOD_GROUP_AB_RHD_POSITIVE = 84;
+    const ABO_AND_RHD_BLOOD_GROUP_O = 55;
+    const ABO_AND_RHD_BLOOD_GROUP_A = 66;
+    const ABO_AND_RHD_BLOOD_GROUP_B = 77;
+    const ABO_AND_RHD_BLOOD_GROUP_AB = 88;
+    const ABO_AND_RHD_BLOOD_GROUP_PARA_BOMBAY_RHD_NEGATIVE = 'D6';
+    const ABO_AND_RHD_BLOOD_GROUP_PARA_BOMBAY_RHD_POSITIVE = 'E6';
+    const ABO_AND_RHD_BLOOD_GROUP_BOMBAY_RHD_NEGATIVE = 'G6';
+    const ABO_AND_RHD_BLOOD_GROUP_Bombay_RHD_POSITIVE = 'H6';
+    const ABO_AND_RHD_BLOOD_GROUP_O_PARA_BOMBAY_RHD_NEGATIVE = 'I6';
+    const ABO_AND_RHD_BLOOD_GROUP_O_PARA_BOMBAY_RHD_POSITIVE = 'J6';
+    const ABO_AND_RHD_BLOOD_GROUP_A_PARA_BOMBAY_RHD_NEGATIVE = 'K6';
+    const ABO_AND_RHD_BLOOD_GROUP_B_PARA_BOMBAY_RHD_NEGATIVE = 'L6';
+    const ABO_AND_RHD_BLOOD_GROUP_AB_PARA_BOMBAY_RHD_NEGATIVE = 'M6';
+    const ABO_AND_RHD_BLOOD_GROUP_A_PARA_BOMBAY_RHD_POSITIVE = 'N6';
+    const ABO_AND_RHD_BLOOD_GROUP_B_PARA_BOMBAY_RHD_POSITIVE = 'O6';
+    const ABO_AND_RHD_BLOOD_GROUP_AB_PARA_BOMBAY_RHD_POSITIVE = 'Q6';
+    const ABO_AND_RHD_BLOOD_GROUP_A_POOLED_RHD = 'A0';
+    const ABO_AND_RHD_BLOOD_GROUP_B_POOLED_RHD = 'B0';
+    const ABO_AND_RHD_BLOOD_GROUP_AB_POOLED_RHD = 'C0';
+    const ABO_AND_RHD_BLOOD_GROUP_O_POOLED_RHD = 'D0';
+    const ABO_AND_RHD_BLOOD_GROUP_POOLED_ABO_RHD_POSITIVE = 'E0';
+    const ABO_AND_RHD_BLOOD_GROUP_POOLED_ABO_RHD_NEGATIVE = 'F0';
+    const ABO_AND_RHD_BLOOD_GROUP_POOLED_ABO_POOLED_RHD = 'G0';
+    const ABO_AND_RHD_BLOOD_GROUP_POOLED_ABO_RHD_NOT_SPECIFIED = 'H0';
+    const ABO_AND_RHD_BLOOD_GROUP_A_1 = 'I0';
+    const ABO_AND_RHD_BLOOD_GROUP_A_2 = 'J0';
+    const ABO_AND_RHD_BLOOD_GROUP_A_1_B = 'K0';
+    const ABO_AND_RHD_BLOOD_GROUP_A_2_B = 'L0';
+
+    const ABO_AND_RHD_BLOOD_GROUP = [
+        self:: ABO_AND_RHD_BLOOD_GROUP_O_RHD_NEGATIVE => 'O RhD negative',
+        self:: ABO_AND_RHD_BLOOD_GROUP_O_RHD_POSITIVE => 'O RhD positive',
+        self:: ABO_AND_RHD_BLOOD_GROUP_A_RHD_NEGATIVE => 'A RhD negative',
+        self:: ABO_AND_RHD_BLOOD_GROUP_A_RHD_POSITIVE => 'A RhD positive',
+        self:: ABO_AND_RHD_BLOOD_GROUP_B_RHD_NEGATIVE => 'B RhD negative',
+        self:: ABO_AND_RHD_BLOOD_GROUP_B_RHD_POSITIVE => 'B RhD positive',
+        self:: ABO_AND_RHD_BLOOD_GROUP_AB_RHD_NEGATIVE => 'AB RhD negative',
+        self:: ABO_AND_RHD_BLOOD_GROUP_AB_RHD_POSITIVE => 'AB RhD positive',
+        self:: ABO_AND_RHD_BLOOD_GROUP_O => 'O',
+        self:: ABO_AND_RHD_BLOOD_GROUP_A => 'A',
+        self:: ABO_AND_RHD_BLOOD_GROUP_B => 'B',
+        self:: ABO_AND_RHD_BLOOD_GROUP_AB => 'AB',
+        self:: ABO_AND_RHD_BLOOD_GROUP_PARA_BOMBAY_RHD_NEGATIVE => 'para-Bombay, RhD negative',
+        self:: ABO_AND_RHD_BLOOD_GROUP_PARA_BOMBAY_RHD_POSITIVE => 'para-Bombay. RhD positive',
+        self:: ABO_AND_RHD_BLOOD_GROUP_BOMBAY_RHD_NEGATIVE => 'Bombay, RhD negative',
+        self:: ABO_AND_RHD_BLOOD_GROUP_Bombay_RHD_POSITIVE => 'Bombay, RhD positive',
+        self:: ABO_AND_RHD_BLOOD_GROUP_O_PARA_BOMBAY_RHD_NEGATIVE => 'O para-Bombay, RhD negative',
+        self:: ABO_AND_RHD_BLOOD_GROUP_O_PARA_BOMBAY_RHD_POSITIVE => 'O para-Bombay, RhD positive',
+        self:: ABO_AND_RHD_BLOOD_GROUP_A_PARA_BOMBAY_RHD_NEGATIVE => 'A para-Bombay, RhD negative',
+        self:: ABO_AND_RHD_BLOOD_GROUP_B_PARA_BOMBAY_RHD_NEGATIVE => 'B para-Bombay, RhD negative',
+        self:: ABO_AND_RHD_BLOOD_GROUP_AB_PARA_BOMBAY_RHD_NEGATIVE => 'AB para-Bombay, RhD negative',
+        self:: ABO_AND_RHD_BLOOD_GROUP_A_PARA_BOMBAY_RHD_POSITIVE => 'A para-Bombay, RhD positive',
+        self:: ABO_AND_RHD_BLOOD_GROUP_B_PARA_BOMBAY_RHD_POSITIVE => 'B para-Bombay, RhD positive',
+        self:: ABO_AND_RHD_BLOOD_GROUP_AB_PARA_BOMBAY_RHD_POSITIVE => 'AB para-Bombay, RhD positive',
+        self:: ABO_AND_RHD_BLOOD_GROUP_A_POOLED_RHD => 'Group A, Pooled RhD',
+        self:: ABO_AND_RHD_BLOOD_GROUP_B_POOLED_RHD => 'Group B, Pooled RhD',
+        self:: ABO_AND_RHD_BLOOD_GROUP_AB_POOLED_RHD => 'Group AB, Pooled RhD [Pooled Products]',
+        self:: ABO_AND_RHD_BLOOD_GROUP_O_POOLED_RHD => 'Group O, Pooled RhD',
+        self:: ABO_AND_RHD_BLOOD_GROUP_POOLED_ABO_RHD_POSITIVE => 'Pooled ABO, RhD Positive',
+        self:: ABO_AND_RHD_BLOOD_GROUP_POOLED_ABO_RHD_NEGATIVE => 'Pooled ABO, RhD Negative',
+        self:: ABO_AND_RHD_BLOOD_GROUP_POOLED_ABO_POOLED_RHD => 'Pooled ABO, Pooled RhD',
+        self:: ABO_AND_RHD_BLOOD_GROUP_POOLED_ABO_RHD_NOT_SPECIFIED => 'Pooled ABO (RhD not specified)',
+        self:: ABO_AND_RHD_BLOOD_GROUP_A_1 => 'A 1',
+        self:: ABO_AND_RHD_BLOOD_GROUP_A_2 => 'A 2',
+        self:: ABO_AND_RHD_BLOOD_GROUP_A_1_B => 'A 1 B',
+        self:: ABO_AND_RHD_BLOOD_GROUP_A_2_B => 'A 2 B',
+    ];
+
+}
