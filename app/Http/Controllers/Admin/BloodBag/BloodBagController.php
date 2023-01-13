@@ -75,14 +75,13 @@ class BloodBagController extends BaseController
     {
         DB::beginTransaction();
         try {
-            $bloodGroup  = substr($request->blood_group, 2);
-            $bloodGroup = str_split($bloodGroup, 2);
+    
             $bloodBag = BloodBag::create([
                 'refrigerator_id' => $request->refrigerator_id,
                 'storage_rack_id' => $request->storage_rack_id,
-                'blood_bag_name' => substr($request->blood_bag_name, 1),
+                'blood_bag_name' => $request->blood_bag_name,
                 'type' => $request->type,
-                'blood_group' =>  IsbtConstants::ABO_AND_RHD_BLOOD_GROUP[($bloodGroup[0])],
+                'blood_group' => $request->blood_group,
                 'product_id' => $request->product_id,
                 'volume' => $request->volume,
                 'expiry_date' => DateHelper::format($request->expiry_date, 'Y-m-d'),
@@ -98,7 +97,6 @@ class BloodBagController extends BaseController
             Toastr::success('Blood Bag Added Successfully');
             DB::commit();
         } catch (\Throwable $th) {
-            dd($th);
             DB::rollBack();
             Toastr::error('Failed to add blood bag');
         }
